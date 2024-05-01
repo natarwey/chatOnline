@@ -1,5 +1,9 @@
 ﻿@page "/vvoiti"
 @inject NavigationManager NavManager
+@using chatOnline.Data
+@using chatOnline.Services
+@inject DataContext DataContext
+@inject UserContext UserContext
 <h3>Форма входа</h3>
 
 <div class="card" style="width: 100vw; margin-top: 3rem;">
@@ -64,20 +68,18 @@
         }
         string newUsername = "User01";
 
-        if (password=cu)
-        {
-            // Имя пользователя соответствует требованиям
-        }
-        else
-        {
-            // Имя пользователя не соответствует требованиям
-        }
-            }
-        
-    
+        // if (password=cu)
+        // {
+        //     // Имя пользователя соответствует требованиям
+        // }
+        // else
+        // {
+        //     // Имя пользователя не соответствует требованиям
+        // }
 
-    public void VoitiChat()
-    {
-        NavManager.NavigateTo("/chat");
-    }
+
+        public void VoitiChat()
+        {
+            NavManager.NavigateTo("/chatik");
+        }
 }
